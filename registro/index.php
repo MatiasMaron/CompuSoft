@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form method_exists="post">
+    <form method="post">
 
         <h2>Hola</h2>
         <p>Inicia tu registro</p>
