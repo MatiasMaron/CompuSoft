@@ -10,8 +10,8 @@
 
     <form method="post">
 
-        <h2>Hola</h2>
-        <p>Inicia tu registro</p>
+        <h2>Bienvenido</h2>
+        <p>Registrate llenando los datos</p>
 
         <div class="input-wrapper">
             <input type="text" name="name" placeholder="Nombre" >
@@ -35,6 +35,10 @@
         </div>
 
         <input class="btn" type="submit" name="register" value="Enviar">
+
+        <div class="Iniciar-sesion">
+            <p class="msg">Ya tienes una cuenta? <a class="btn-login" href="login.php">Inicia Sesion</a></p>
+        </div>
 
     </form>
 

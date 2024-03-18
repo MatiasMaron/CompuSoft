@@ -93,6 +93,11 @@ input::placeholder{
     font: 18px;
 }
 
+.Iniciar-sesion {
+    display: flex;
+    flex-direction: column;
+}
+
 @media(max-width:991px) {
     body{
         padding: 10px;

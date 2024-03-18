@@ -1,3 +1,23 @@
+/* Funcion para realizar la solicitud al servidor */
+function checkSession() {
+    fetch('http://localhost/registro/check_session.php')
+        .then(response => response.json())
+        .then(data => {
+            if (data.loggedIn) {
+                // Si el usuario ha iniciado sesión, cambiar el mensaje de "acceder" a el nombre del usuario
+                document.getElementById('accede-msg').innerText = data.username;
+            } else {
+                // Si el usuario no ha iniciado sesión, mostrar el botón de inicio de sesión
+                document.getElementById('accede-msg').innerHTML = '<a class="btn-login" href="http://localhost/registro/login.php">Acceder</a>';
+            }
+        })
+        .catch(error => console.error('Error:', error))
+}
+
+window.onload = checkSession;
+
+setTimeout(checkSession, 500);
+
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector('.container-cart-products');
 
